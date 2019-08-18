@@ -1,4 +1,4 @@
-# ADP5071-regulated-breakout-board
+# regulated-SEPIC-converter
 # Overview
 The ADP5070/5071 are integrated dual rail switching power supplies that can generate outputs of up to -39V - 39V from an input voltage of 2.85V - 15V. As an alternative to low current charge pumps, the ADP5071 is specced to deliver up to 2A on the positive rail and 1.2A on the negative rail (compared to ~50-100mV out of a typical charge pump). This makes it great for use in a system requiring high current dual rail inputs, like high-power op amps or ADCs.
 
