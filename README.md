@@ -9,7 +9,7 @@ You can find the official documentation for the [ADP5071 chip here,](https://www
 *_Note_*: The board is currently designed for a +/- 6V rail for a 9V battery input, which *only* works in a SEPIC design. 
 
 # Navigating this repo
-The main folder contains relevant Kicad files (.pro, .pcb, .sch). The `gerber` directory has a PCB-fabrication ready set of gerber files. The `library` directory contains a custom kicad footprint for the PJ-037A, SMA connector and LPD3015 power inductor.   
+The main folder contains relevant Kicad files (.pro, .pcb, .sch). The `gerber` directory has a PCB-fabrication ready set of gerber files. The `library` directory contains a custom kicad footprint for the PJ-037A, SMA connector and LPD3015 power inductor. There are also hand-solderable footprints for the linear regulators included. Finally, an updated `devices` library is available for the symbol for the LPD3015 (alternatively, you can make the symbol yourself as a small edit to the existing coupled inductor). 
 
 # Board images
 PCB Layout:
