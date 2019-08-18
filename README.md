@@ -6,7 +6,7 @@ Additionally, the chip has flexibility in what kind of switching architecture is
 
 You can find the official documentation for the [ADP5071 chip here,](https://www.analog.com/en/products/adp5071.html) for the [LT3094 here,](https://www.analog.com/en/products/lt3094.html) and for [the LT3045 here](https://www.analog.com/en/products/lt3045.html#product-overview). This is a breakout board made in Kicad with a barrel jack power input [(the PJ-037A)](https://www.digikey.com/product-detail/en/cui-inc/PJ-037A/CP-037A-ND/1644545) and [SMA connectors for each output](https://www.amazon.com/gp/product/B00G94UK74/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) (+/- rail for switching supply, and +/- rail for LDOs).
 
-*_Note_*: The board is currently designed for a +/- 6V rail for a 9V battery input, which *only* works in a SEPIC design. 
+*_Note_*: The board is currently designed for a +/- 6V rail for a 9V battery input, which *only* works in a SEPIC design. If not using the SEPIC design, make sure to have the desired positive rail be higher than the input voltage. 
 
 # Navigating this repo
 The main folder contains relevant Kicad files (.pro, .pcb, .sch). The `gerber` directory has a PCB-fabrication ready set of gerber files. The `library` directory contains a custom kicad footprint for the PJ-037A, SMA connector and LPD3015 power inductor. There are also hand-solderable footprints for the linear regulators included. Finally, an updated `devices` library is available for the symbol for the LPD3015 (alternatively, you can make the symbol yourself as a small edit to the existing coupled inductor). 
